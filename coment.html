@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-ar="فعاليات" data-en="Events">فعاليات</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+     <header>
+        <nav>
+            <div class="logo-title">
+                <img src="assets/img/1.png" alt="شعار الموقع">
+                <h3 class="site" data-ar="فعاليات حمص العدية" data-en="Homs Events">فعاليات حمص العدية</h3>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                <a href="events.html" data-ar="الفعاليات" data-en="Events">الفعاليات</a>
+                <a href="event.html" data-ar="التصنيفات" data-en="Categories">التصنيفات</a>
+                <a href="about.html" data-ar="من نحن" data-en="About Us">من نحن</a>
+                <a href="coment.html" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</a>
+            </div>
+            <div class="language-switch">
+                <img src="assets/img/A (2).png" alt="العربية" id="lang-ar" title="العربية" class="flag-icon">
+                <img src="assets/img/E.png" alt="English" id="lang-en" title="English" class="flag-icon">
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="text-center mb-4" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</h1>
+    <h4 class="text-center text-muted" data-ar="نحن هنا للإجابة على استفساراتكم. الرجاء ملء النموذج أدناه." 
+        data-en="We are here to answer your inquiries. Please fill out the form below.">
+        نحن هنا للإجابة على استفساراتكم. الرجاء ملء النموذج أدناه.
+    </h4>
+
+    <div class="container my-5">
+        <div class="row">
+            <!-- العمود الأكبر للنموذج -->
+            <div class="col-md-8 mb-4">
+                <div class="card p-4 shadow-sm">
+                    <form id="contactForm" novalidate>
+                        <div class="mb-3" dir="ltr">
+                            <label for="name" class="form-label" dir="rtl" data-ar="الاسم الكامل" data-en="Full Name">الاسم الكامل</label>
+                            <input type="text" class="form-control" id="name" required placeholder="Please enter your name here in English.">
+                            <div class="invalid-feedback" data-ar="الرجاء إدخال اسمك." data-en="Please enter your name.">الرجاء إدخال اسمك.</div>
+                        </div>
+
+                        <div class="mb-3" dir="ltr">
+                            <label for="email" class="form-label" dir="rtl" data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</label>
+                            <input type="email" class="form-control" id="email" required placeholder="@gmail.com">
+                            <div class="invalid-feedback" data-ar="الرجاء إدخال بريد إلكتروني صالح." data-en="Please enter a valid email.">الرجاء إدخال بريد إلكتروني صالح.</div>
+                        </div>
+
+                        <div class="mb-3" dir="ltr">
+                            <label for="message" class="form-label" data-ar="الرسالة" data-en="Message">الرسالة</label>
+                            <textarea class="form-control" id="message" rows="5" required placeholder="Please enter your private message here"></textarea>
+                            <div class="invalid-feedback" data-ar="الرجاء كتابة رسالتك." data-en="Please write your message.">الرجاء كتابة رسالتك.</div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary w-100" data-ar="إرسال الرسالة" data-en="Send Message">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- العمود الأصغر للكارد الجانبي -->
+            <div class="col-md-4 mb-4">
+                <div class="card p-3 shadow-sm" style="background-color: #f8f9fa;">
+                    <h5 class="mb-3" data-ar="معلومات تواصل بديلة" data-en="Alternative Contact Information">معلومات تواصل بديلة</h5>
+                    <ul class="list-unstyled">
+                        <li><strong data-ar="البريد العام:" data-en="General Email:">البريد العام:</strong> info@eventsyria.com</li>
+                        <li><strong data-ar="تويتر:" data-en="Twitter:">تويتر:</strong> <a href="https://twitter.com/eventsyria" target="_blank">@eventsyria</a></li>
+                        <li><strong data-ar="إنستغرام:" data-en="Instagram:">إنستغرام:</strong> <a href="https://instagram.com/eventsyria" target="_blank">@eventsyria</a></li>
+                        <li><strong data-ar="يوتيوب:" data-en="YouTube:">يوتيوب:</strong> <a href="https://youtube.com/eventsyria" target="_blank">Events Syria</a></li>
+                        <li><strong data-ar="سناب شات:" data-en="Snapchat:">سناب شات:</strong> <a href="#">@eventsyria</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-ar="من نحن" data-en="About Us">من نحن</h3>
+                <p data-ar="منصة متخصصة في عرض الفعاليات و الأنشطة في مدينة حمص نسعى لتوفير تجربة مميزة للمستخدمين معنا." 
+                   data-en="A platform specialized in showcasing events and activities in Homs, aiming to provide a unique user experience.">
+                   منصة متخصصة في عرض الفعاليات و الأنشطة في مدينة حمص نسعى لتوفير تجربة مميزة للمستخدمين معنا.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3 data-ar="معلومات التواصل" data-en="Contact Information">معلومات التواصل</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> سوريا , مدينة حمص</li>
+                    <li><i class="fas fa-phone"></i> +963 982 711 822</li>
+                    <li><i class="fas fa-envelope"></i> info@eventsyria.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 data-ar="تابعنا" data-en="Follow Us">تابعنا</h3>
+                <div class="social-links">
+                    <a href="https://svuonline.org"><img src="assets/img/img1.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom" data-ar="&copy; 2025 دليل الفعاليات. جميع الحقوق محفوظة." 
+             data-en="&copy; 2025 Events Guide. All rights reserved.">
+             &copy; 2025 دليل الفعاليات. جميع الحقوق محفوظة.
+        </div>
+    </footer>
+    <button id="darkModeToggle" class="dark-mode-btn" title="تبديل الوضع الداكن">🌙</button>
+<!-- Scroll to Top Button -->
+<button id="scrollTopBtn" title="الرجوع للأعلى">⬆</button>
+<script src="assets/main.js"></script>
+</body>
+</html>

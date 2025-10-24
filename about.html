@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ========== Header ========== -->
+     <header>
+        <nav>
+            <div class="logo-title">
+                <img src="assets/img/1.png" alt="Website Logo">
+                <h3 class="site" data-ar="فعاليات حمص العدية" data-en="Homs Events">Homs Events</h3>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" data-ar="الرئيسية" data-en="Home">Home</a>
+                <a href="events.html" data-ar="الفعاليات" data-en="Events">Events</a>
+                <a href="event.html" data-ar="التصنيفات" data-en="Categories">Categories</a>
+                <a href="about.html" data-ar="من نحن" data-en="About Us">About Us</a>
+                <a href="coment.html" data-ar="اتصل بنا" data-en="Contact Us">Contact Us</a>
+            </div>
+            <div class="language-switch">
+                <img src="assets/img/A (2).png" alt="Arabic" id="lang-ar" title="Arabic" class="flag-icon">
+                <img src="assets/img/E.png" alt="English" id="lang-en" title="English" class="flag-icon">
+                <button id="darkModeToggle" class="dark-mode-btn" title="تبديل الوضع الداكن">🌙</button>
+
+            </div>
+        </nav>
+    </header>
+<main class="container">
+
+    <!-- هدفنا ورؤيتنا -->
+    <section class="info-section">
+        <h2 data-ar="هدفنا، رؤيتنا ورسالتنا" data-en="Our Goal, Vision, and Mission">هدفنا، رؤيتنا ورسالتنا</h2>
+        <p><strong data-ar="هدف الدليل:" data-en="Goal of the Guide:">هدف الدليل:</strong> 
+        <span data-ar="منصة متكاملة وسهلة الاستخدام للقادمين إلى مدينة حمص بأهم الفعاليات المقامة في حمص." 
+              data-en="An integrated and user-friendly platform for visitors to Homs, showcasing the main events in the city.">
+              منصة متكاملة وسهلة الاستخدام للقادمين إلى مدينة حمص بأهم الفعاليات المقامة في حمص.
+        </span></p>
+        <p><strong data-ar="رؤيتنا:" data-en="Our Vision:">رؤيتنا:</strong> 
+        <span data-ar="أن نكون المرجع الأول للفعاليات، ونساهم في إتاحة الفرصة للتعرف على مدينة حمص و ثقافية شعبها." 
+              data-en="To be the primary reference for events and help people discover Homs and its cultural heritage.">
+              أن نكون المرجع الأول للفعاليات، ونساهم في إتاحة الفرصة للتعرف على مدينة حمص و ثقافية شعبها.
+        </span></p>
+        <p><strong data-ar="رسالتنا:" data-en="Our Mission:">رسالتنا:</strong> 
+        <span data-ar="تقديم معلومات دقيقة وحديثة، ودعم منظمي الفعاليات لزيادة وصولهم للجمهور المناسب." 
+              data-en="Provide accurate and up-to-date information, and support event organizers to reach the right audience.">
+              تقديم معلومات دقيقة وحديثة، ودعم منظمي الفعاليات لزيادة وصولهم للجمهور المناسب.
+        </span></p>
+    </section>
+
+    <!-- فريق العمل -->
+    <section class="team-section">
+        <h2 data-ar="فريق عمل الدليل" data-en="Our Team">فريق عمل الدليل</h2>
+        <div class="team-grid">
+            <div class="card">
+                <img src="assets/img/pp.png" alt="الاء قرة حسن">
+                <h5 data-ar="الاء قرة حسن" data-en="Alaa Qara Hassan">الاء قرة حسن</h5>
+                <p data-ar="قائدة المشروع والابتكار" data-en="Project and Innovation Leader">قائدة المشروع والابتكار</p>
+            </div>
+            <div class="card">
+                <img src="assets/img/a.png" alt="احمد زكريا الجندلي">
+                <h5 data-ar="احمد زكريا الجندلي" data-en="Ahmed Zakaria Al-Jandali">احمد زكريا الجندلي</h5>
+                <p data-ar="مطور الواجهة الأمامية والخلفية" data-en="Front-end & Back-end Developer">مطور الواجهة الأمامية والخلفية</p>
+            </div>
+            <div class="card">
+                <img src="assets/img/z.png" alt="غالية النابلسي">
+                <h5 data-ar="غالية النابلسي" data-en="Ghalia Al-Nabulsi">غالية النابلسي</h5>
+                <p data-ar="مصممة تجربة المستخدم (UX/UI)" data-en="UX/UI Designer">مصممة تجربة المستخدم (UX/UI)</p>
+            </div>
+            <div class="card">
+                <img src="assets/img/nn.png" alt="محمد علاء الدين">
+                <h5 data-ar="محمد علاء الدين" data-en="Mohammed Alaa Eldin">محمد علاء الدين</h5>
+                <p data-ar="مدير التسويق والمحتوى" data-en="Marketing & Content Manager">مدير التسويق والمحتوى</p>
+            </div>
+            <div class="card">
+                <img src="assets/img/cc.png" alt="ماسة زرزور">
+                <h5 data-ar="ماسة زرزور" data-en="Masa Zarzur">ماسة زرزور</h5>
+                <p data-ar="مدققة جودة (Quality Assurance)" data-en="Quality Assurance (QA)">مدققة جودة (Quality Assurance)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- السياسات والمعايير -->
+    <section class="info-section">
+        <h2 data-ar="سياسات الدليل ومعايير النشر" data-en="Guide Policies and Publishing Standards">سياسات الدليل ومعايير النشر</h2>
+        <ul class="list-group">
+            <li>
+                <strong data-ar="سياسة التقديم:" data-en="Submission Policy:">سياسة التقديم:</strong> 
+                <span data-ar="يجب أن تكون الفعالية ذات هدف واضح وخدمة مجتمعية أو ترفيهية حقيقية." 
+                      data-en="The event must have a clear goal and provide genuine community or entertainment value.">
+                      يجب أن تكون الفعالية ذات هدف واضح وخدمة مجتمعية أو ترفيهية حقيقية.
+                </span>
+            </li>
+            <li>
+                <strong data-ar="معايير النشر:" data-en="Publishing Standards:">معايير النشر:</strong> 
+                <span data-ar="يتم مراجعة كل فعالية قبل النشر للتأكد من خلوها من أي محتوى مسيء أو غير لائق." 
+                      data-en="All events are reviewed before publishing to ensure they contain no offensive or inappropriate content.">
+                      يتم مراجعة كل فعالية قبل النشر للتأكد من خلوها من أي محتوى مسيء أو غير لائق.
+                </span>
+            </li>
+            <li>
+                <strong data-ar="حقوق الملكية:" data-en="Copyright:">حقوق الملكية:</strong> 
+                <span data-ar="يجب أن يمتلك منظم الفعالية كافة الحقوق اللازمة للصور والنصوص المستخدمة." 
+                      data-en="Event organizers must own all rights to the images and text used.">
+                      يجب أن يمتلك منظم الفعالية كافة الحقوق اللازمة للصور والنصوص المستخدمة.
+                </span>
+            </li>
+        </ul>
+    </section>
+</main>
+
+ <!-- ========== Footer ========== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-ar="من نحن" data-en="About Us">من نحن</h3>
+                <p data-ar="منصة متخصصة في عرض الفعاليات و الأنشطة في مدينة حمص نسعى لتوفير تجربة مميزة للمستخدمين معنا." data-en="A platform specializing in events and activities in Homs, providing a great user experience.">منصة متخصصة في عرض الفعاليات و الأنشطة في مدينة حمص نسعى لتوفير تجربة مميزة للمستخدمين معنا.</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-ar="معلومات التواصل" data-en="Contact Info">معلومات التواصل</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> سوريا , مدينة حمص</li>
+                    <li><i class="fas fa-phone"></i> +963 982 711 822</li>
+                    <li><i class="fas fa-envelope"></i> info@eventsyria.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-ar="تابعنا" data-en="Follow Us">تابعنا</h3>
+                <div class="social-links">
+                    <a href="https://svuonline.org"><img src="assets/img/img1.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 دليل الفعاليات. جميع الحقوق محفوظة.
+        </div>
+    </footer>
+    <button id="darkModeToggle" class="dark-mode-btn" title="تبديل الوضع الداكن">🌙</button>
+<!-- Scroll to Top Button -->
+<button id="scrollTopBtn" title="الرجوع للأعلى">⬆</button>
+    <!-- JS Scripts -->
+    <script src="assets/main.js"></script>
+    <!-- Bootstrap JS + Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

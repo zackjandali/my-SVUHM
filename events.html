@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-ar="فعاليات حمص" data-en="Homs Events">فعاليات حمص</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/events.css">
+</head>
+<body class="events-page">
+
+    <!-- رأس الصفحة -->
+    <header>
+        <nav>
+            <div class="logo-title">
+                <img src="assets/img/1.png" alt="شعار الموقع">
+                <h3 class="site" data-ar="فعاليات حمص العدية" data-en="Homs Events">فعاليات حمص العدية</h3>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                <a href="events.html" data-ar="الفعاليات" data-en="Events">الفعاليات</a>
+                <a href="event.html" data-ar="التصنيفات" data-en="Categories">التصنيفات</a>
+                <a href="about.html" data-ar="من نحن" data-en="About Us">من نحن</a>
+                <a href="coment.html" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</a>
+            </div>
+            <div class="language-switch">
+                <img src="assets/img/A (2).png" alt="العربية" id="lang-ar" title="العربية" class="flag-icon">
+                <img src="assets/img/E.png" alt="English" id="lang-en" title="English" class="flag-icon">
+            </div>
+        </nav>
+    </header>
+
+    <!-- شريط البحث والتصفية -->
+    <section class="filters-section py-4">
+        <div class="container">
+            <div class="row g-2 align-items-end">
+                <div class="col-md">
+                    <label for="search" class="form-label" data-ar="بحث في الفعاليات" data-en="Search Events">بحث في الفعاليات</label>
+                    <input type="text" id="search" class="form-control" placeholder="اكتب كلمة للبحث..." data-ar-placeholder="اكتب كلمة للبحث..." data-en-placeholder="Type a keyword...">
+                </div>
+                <div class="col-md">
+                    <label for="category" class="form-label" data-ar="التصنيف" data-en="Category">التصنيف</label>
+                    <select id="category" class="form-select">
+                        <option value="" data-ar="جميع التصنيفات" data-en="All Categories">جميع التصنيفات</option>
+                        <option value="تنموية" data-ar="تنموية" data-en="Development">تنموية</option>
+                        <option value="رياضية" data-ar="رياضية" data-en="Sports">رياضية</option>
+                        <option value="موسيقى" data-ar="موسيقى" data-en="Music">موسيقى</option>
+                        <option value="تعليمية" data-ar="تعليمية" data-en="Education">تعليمية</option>
+                        <option value="ترفيهية" data-ar="ترفيهية" data-en="Entertainment">ترفيهية</option>
+                    </select>
+                </div>
+                <div class="col-md">
+                    <label for="location" class="form-label" data-ar="المكان" data-en="Location">المكان</label>
+                    <select id="location" class="form-select">
+                        <option value="" data-ar="جميع الأماكن" data-en="All Locations">جميع الأماكن</option>
+                        <option value="جامعة حمص" data-ar="جامعة حمص" data-en="Homs University">جامعة حمص</option>
+                        <option value="المركز الثقافي" data-ar="المركز الثقافي" data-en="Cultural Center">المركز الثقافي</option>
+                        <option value="منتزه أميسا غاردن" data-ar="منتزه أميسا غاردن" data-en="Amisa Garden">منتزه أميسا غاردن</option>
+                        <option value="شارع الملعب - ملعب الكرامة" data-ar="شارع الملعب - ملعب الكرامة" data-en="Stadium Street - Al-Karama Stadium">شارع الملعب - ملعب الكرامة</option>
+                        <option value="شارع السفير" data-ar="شارع السفير" data-en="Al-Safir Street">شارع السفير</option>
+                        <option value="ساحة الساعة الجديدة" data-ar="ساحة الساعة الجديدة" data-en="New Clock Square">ساحة الساعة الجديدة</option>
+                    </select>
+                </div>
+                <div class="col-md">
+                    <label for="date" class="form-label" data-ar="التاريخ" data-en="Date">التاريخ</label>
+                    <input type="date" id="date" class="form-control">
+                </div>
+                <div class="col-md-auto">
+                    <button class="btn btn-primary w-100" id="filterBtn" data-ar="بحث" data-en="Search">بحث</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- عرض الفعاليات -->
+    <section class="events-section py-4">
+        <div class="container">
+            <h2 class="section-title text-center mb-4" data-ar="جميع الفعاليات" data-en="All Events">جميع الفعاليات</h2>
+            <div class="row g-4">
+
+                <!-- فعالية 1 -->
+                <div class="col-md-6" id="1">
+                    <div class="event-card position-relative" data-category="تنموية" data-location="المركز الثقافي" data-date="2025-08-15">
+                        <span class="event-category" data-ar="تنموية" data-en="Development">تنموية</span>
+                        <img src="assets/img/5.png" alt="فعالية 1">
+                        <div class="event-content">
+                            <h2 data-ar="أربعاء حمص" data-en="Homs Wednesday">أربعاء حمص</h2>
+                            <p data-ar="مؤتمر أربعاء حمص يجمع تبرعات لإعادة إعمار المدينة و يؤكد رمزية انطلاقتها الثورية" 
+                               data-en="Homs Wednesday conference gathers donations to rebuild the city and affirms its symbolic launch.">
+                               مؤتمر أربعاء حمص يجمع تبرعات لإعادة إعمار المدينة و يؤكد رمزية انطلاقتها الثورية
+                            </p>
+                            <div class="event-meta">
+                                <div class="event-date">15/08/2025</div>
+                                <div class="event-location" data-en="Cultural Center"  data-ar="المركز الثقافي">المركز الثقافي</div>
+                                <div class="event-time">7:00 مساءً</div>
+                            </div>
+                            <a href="event.html?id=1" class="btn-details" data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- فعالية 2 -->
+                <div class="col-md-6" id="2">
+                    <div class="event-card position-relative" data-category="موسيقى" data-location="ساحة الساعة الجديدة" data-date="2025-08-16">
+                        <span class="event-category" data-ar="موسيقى" data-en="Music">موسيقى</span>
+                        <img src="assets/img/8.jpg" alt="فعالية 2">
+                        <div class="event-content">
+                            <h2 data-ar="التراث الحمصي" data-en="Homs Heritage">التراث الحمصي</h2>
+                            <p data-ar="فقرات غنائية و عراضة حمصية التي تشتهر بها شباب المدينة" data-en="Musical performances and Homs folklore famous among local youth">
+                                فقرات غنائية و عراضة حمصية التي تشتهر بها شباب المدينة
+                            </p>
+                            <div class="event-meta">
+                                <div class="event-date">16/08/2025</div>
+                                <div class="event-location"  data-en="New Clock Square" data-ar="ساحة الساعة الجديدة">ساحة الساعة الجديدة</div>
+                                <div class="event-time">6:00 مساءً</div>
+                            </div>
+                            <a href="event.html?id=2" class="btn-details" data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- فعالية 3 -->
+                <div class="col-md-6" id="3">
+                    <div class="event-card position-relative" data-category="تعليمية" data-location="جامعة حمص" data-date="2025-08-17">
+                        <span class="event-category" data-ar="تعليمية" data-en="Education">تعليمية</span>
+                        <img src="assets/img/7.png" alt="فعالية 3">
+                        <div class="event-content">
+                            <h2 data-ar="وجهتك الأكاديمية" data-en="Your Academic Destination">وجهتك الأكاديمية</h2>
+                            <p data-ar="ملتقى وجهتك الأكاديمية في جامعة حمص أطلقت برعاية وزارة التعليم العالي و البحث العلمي." data-en="Your Academic Destination Forum at Homs University, launched under the patronage of the Ministry of Higher Education and Scientific Research.">
+                                ملتقى وجهتك الأكاديمية في جامعة حمص أطلقت برعاية وزارة التعليم العالي و البحث العلمي.
+                            </p>
+                            <div class="event-meta">
+                                <div class="event-date">17/08/2025</div>
+                                <div class="event-location" data-ar="جامعة حمص" data-en="Homs University">جامعة حمص</div>
+                                <div class="event-time">8:00 صباحاً</div>
+                            </div>
+                            <a href="event.html?id=3" class="btn-details" data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- فعالية 4 -->
+                <div class="col-md-6" id="4">
+                    <div class="event-card position-relative" data-category="ترفيهية" data-location="منتزه أميسا غاردن" data-date="2025-08-18">
+                        <span class="event-category" data-ar="ترفيهية" data-en="Entertainment">ترفيهية</span>
+                        <img src="assets/img/8.png" alt="فعالية 4">
+                        <div class="event-content">
+                            <h2 data-ar="حفل افتتاح" data-en="Opening Ceremony">حفل افتتاح</h2>
+                            <p data-ar="منتزه أميسا غاردن يعتبر من أحدث المراكز الترفيهية و السياحية في مدينة حمص" data-en="Amisa Garden is one of the newest recreational and tourist centers in Homs">
+                                منتزه أميسا غاردن يعتبر من أحدث المراكز الترفيهية و السياحية في مدينة حمص
+                            </p>
+                            <div class="event-meta">
+                                <div class="event-date">18/08/2025</div>
+                                <div class="event-location" data-ar="منتزه أميسا غاردن" data-en="Amisa Garden">منتزه أميسا غاردن</div>
+                                <div class="event-time">5:00 مساءً</div>
+                            </div>
+                            <a href="event.html?id=4" class="btn-details" data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-ar="من نحن" data-en="About Us">من نحن</h3>
+                <p data-ar="منصة متخصصة في عرض الفعاليات و الأنشطة في مدينة حمص نسعى لتوفير تجربة مميزة للمستخدمين معنا." 
+                   data-en="A platform specialized in showcasing events and activities in Homs, aiming to provide a great user experience.">
+                   منصة متخصصة في عرض الفعاليات و الأنشطة في مدينة حمص نسعى لتوفير تجربة مميزة للمستخدمين معنا.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3 data-ar="معلومات التواصل" data-en="Contact Info">معلومات التواصل</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> سوريا , مدينة حمص</li>
+                    <li><i class="fas fa-phone"></i> +963 982 711 822</li>
+                    <li><i class="fas fa-envelope"></i> info@eventsyria.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-ar="تابعنا" data-en="Follow Us">تابعنا</h3>
+                <div class="social-links">
+                    <a href="https://svuonline.org"><i class="fab fa-twitter"><img src="assets/img/img1.png" alt=""></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 دليل الفعاليات. جميع الحقوق محفوظة.
+        </div>
+    </footer>
+    <button id="darkModeToggle" class="dark-mode-btn" title="تبديل الوضع الداكن">🌙</button>
+<!-- Scroll to Top Button -->
+<button id="scrollTopBtn" title="الرجوع للأعلى">⬆</button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/main.js"></script>
+</body>
+</html>

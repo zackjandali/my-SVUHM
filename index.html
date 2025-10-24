@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-ar="فعاليات" data-en="Events">فعاليات</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!--  الهيدر  -->
+    <header>
+        <nav>
+            <div class="logo-title">
+                <img src="assets/img/1.png" alt="شعار الموقع">
+                <h3 class="site" data-ar="فعاليات حمص العدية" data-en="Homs Events">فعاليات حمص العدية</h3>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                <a href="events.html" data-ar="الفعاليات" data-en="Events">الفعاليات</a>
+                <a href="event.html" data-ar="التصنيفات" data-en="Categories">التصنيفات</a>
+                <a href="about.html" data-ar="من نحن" data-en="About Us">من نحن</a>
+                <a href="coment.html" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</a>
+             <div class="dropdown">
+            <button class="dropbtn" id="teamBtn">أعضاء الفريق ▾</button>
+            <ul class="dropdown-content" id="teamList">
+                <li>alaa_285601</li>
+                <li>ahmad_zakaria_290425</li>
+                <li>masa_284157</li>
+                <li>ghalia_301320</li>
+                <li>mohamad_301085</li>
+            </ul>
+        </div>
+    </div>
+            </div>
+             
+            <div class="language-switch">
+                <img src="assets/img/A (2).png" alt="العربية" id="lang-ar" title="العربية" class="flag-icon">
+                <img src="assets/img/E.png" alt="English" id="lang-en" title="English" class="flag-icon">
+                
+
+            </div>
+        </nav>
+    </header>
+
+    <!--  المحتوى الرئيسي  -->
+    <main>
+        <!-- Carousel -->
+        <section class="highlight-events">
+            <h3 data-ar="فعاليات بارزة لهذا الأسبوع" data-en="Featured Events This Week">فعاليات بارزة لهذا الأسبوع</h3>
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <h4 data-ar="فعالية ثقافية" data-en="Cultural Event">فعالية ثقافية</h4>
+                    <img src="assets/img/2.png" alt="الفعالية الأولى">
+                    <p data-ar="جلسة حوارية بحضور معالي وزير الثقافة" data-en="A dialogue session with the Minister of Culture">جلسة حوارية بحضور معالي وزير الثقافة</p>
+                </div>
+                <div class="carousel-slide">
+                    <h4 data-ar="فعالية رياضية" data-en="Sports Event">فعالية رياضية</h4>
+                    <img src="assets/img/3.png" alt="الفعالية الثانية">
+                    <p data-ar="مباراه ودية بين فريق الوثبة والكرامة" data-en="Friendly match between Al-Wathba and Al-Karama">مباراه ودية بين فريق الوثبة والكرامة</p>
+                </div>
+                <div class="carousel-slide">
+                    <h4 data-ar="فعالية تاريخية" data-en="Historical Event">فعالية تاريخية</h4>
+                    <img src="assets/img/4.png" alt="الفعالية الثالثة">
+                    <p data-ar="زيارة الأسواق القديمة في حمص" data-en="Visit the old markets in Homs">زيارة الأسواق القديمة في حمص</p>
+                </div>
+            </div>
+            <button class="carousel-btn left-btn"></button>
+            <button class="carousel-btn right-btn"></button>
+        </section>
+
+        <!-- التصنيفات -->
+        <section class="categories">
+            <h2 data-ar="تصنيفات سريعة" data-en="Quick Categories">تصنيفات سريعة</h2>
+            <div class="categories-container">
+               <span class="badge-category culture" data-ar="ثقافة" data-en="Culture" data-value="culture">ثقافة</span>
+<span class="badge-category sport" data-ar="رياضة" data-en="Sports" data-value="sport">رياضة</span>
+<span class="badge-category music" data-ar="موسيقى" data-en="Music" data-value="music">موسيقى</span>
+<span class="badge-category family" data-ar="عائلي" data-en="Family" data-value="family">عائلي</span>
+<span class="badge-category education" data-ar="تعليمي" data-en="Education" data-value="education">تعليمي</span>
+<span class="badge-category fun" data-ar="ترفيهي" data-en="Fun" data-value="fun">ترفيهي</span>
+<span class="badge-category all" data-ar="الكل" data-en="All" data-value="all">الكل</span>
+
+            </div>
+        </section>
+
+        <!-- أحدث الفعاليات -->
+        <section class="latest-events container my-4">
+    <h1 class="mb-4 text-center" data-ar="أحدث الفعاليات" data-en="Latest Events">أحدث الفعاليات</h1>
+    <div class="row g-4">
+
+        <!-- فعالية ثقافية -->
+        <div class="col-md-6 event-card" data-category="culture">
+            <div class="card h-100">
+                <img src="assets/img/55.png" alt="الفعالية الأولى" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title" data-ar="فعالية تنموية" data-en="Development Event">فعالية تنموية</h3>
+                    <p class="card-text" data-ar="مؤتمر أربعاء حمص يجمع تبرعات لإعادة إعمار المدينة و يؤكد رمزية انطلاقتها الثورية" data-en="The Homs Wednesday conference collects donations to rebuild the city and emphasizes its symbolic launch.">
+                        مؤتمر أربعاء حمص يجمع تبرعات لإعادة إعمار المدينة و يؤكد رمزية انطلاقتها الثورية
+                    </p>
+                    <a href="events.html?id=1" class="btn btn-primary" data-ar="المزيد" data-en="More">المزيد</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- فعالية موسيقية -->
+        <div class="col-md-6 event-card" data-category="music">
+            <div class="card h-100">
+                <img src="assets/img/8.jpg" alt="الفعالية الثانية" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title" data-ar="فعالية موسيقية" data-en="Music Event">فعالية موسيقية</h3>
+                    <p class="card-text" data-ar="فقرات غنائية و عراضة حمصية من تراث الحمصي" data-en="Musical sessions and Homs heritage shows">
+                        فقرات غنائية و عراضة حمصية من تراث الحمصي
+                    </p>
+                    <a href="events.html?id=2" class="btn btn-primary" data-ar="المزيد" data-en="More">المزيد</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- فعالية تعليمية -->
+        <div class="col-md-6 event-card" data-category="education">
+            <div class="card h-100">
+                <img src="assets/img/7.png" alt="الفعالية الثالثة" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title" data-ar="فعالية تعليمية" data-en="Educational Event">فعالية تعليمية</h3>
+                    <p class="card-text" data-ar="ملتقى وجهتك الأكاديمية في جامعة حمص أطلقت برعاية وزارة التعليم العالي و البحث العلمي و مكتب شؤون الطلاب" data-en="Your academic destination forum at Homs University launched under the Ministry of Higher Education">
+                        ملتقى وجهتك الأكاديمية في جامعة حمص أطلقت برعاية وزارة التعليم العالي و البحث العلمي و مكتب شؤون الطلاب
+                    </p>
+                    <a href="events.html?id=3" class="btn btn-primary" data-ar="المزيد" data-en="More">المزيد</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- فعالية ترفيهية -->
+        <div class="col-md-6 event-card" data-category="fun">
+            <div class="card h-100">
+                <img src="assets/img/8.png" alt="الفعالية الرابعة" class="card-img-top" style="height:350px;">
+                <div class="card-body">
+                    <h3 class="card-title" data-ar="فعالية ترفيهية" data-en="Fun Event">فعالية ترفيهية</h3>
+                    <p class="card-text" data-ar="منتزه أميسا غاردن يعتبر من أحدث المراكز الترفيهية و السياحية في مدينة حمص" data-en="Amisa Garden Park is one of the newest recreational and tourist centers in Homs">
+                        منتزه أميسا غاردن يعتبر من أحدث المراكز الترفيهية و السياحية في مدينة حمص
+                    </p>
+                    <a href="events.html?id=4" class="btn btn-primary" data-ar="المزيد" data-en="More">المزيد</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    </main>
+
+    <!--الفوتر-->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-ar="من نحن" data-en="About Us">من نحن</h3>
+                <p data-ar="منصة متخصصة في عرض الفعاليات و الأنشطة في مدينة حمص نسعى لتوفير تجربة مميزة للمستخدمين معنا." data-en="A platform specializing in events and activities in Homs, providing a great user experience.">منصة متخصصة في عرض الفعاليات و الأنشطة في مدينة حمص نسعى لتوفير تجربة مميزة للمستخدمين معنا.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3 data-ar="معلومات التواصل" data-en="Contact Info">معلومات التواصل</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> سوريا , مدينة حمص</li>
+                    <li><i class="fas fa-phone"></i> +963 982 711 822</li>
+                    <li><i class="fas fa-envelope"></i> info@eventsyria.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-ar="تابعنا" data-en="Follow Us">تابعنا</h3>
+                <div class="social-links">
+                    <a href="https://svuonline.org"><img src="assets/img/img1.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 دليل الفعاليات. جميع الحقوق محفوظة.
+        </div>
+    </footer>
+    <button id="darkModeToggle" class="dark-mode-btn" title="تبديل الوضع الداكن">🌙</button>
+<!-- Scroll to Top Button -->
+<button id="scrollTopBtn" title="الرجوع للأعلى">⬆</button>
+
+    <!-- JS -->
+    <script src="assets/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

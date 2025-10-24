@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-ar="تفاصيل الفعاليات" data-en="Event Details">تفاصيل الفعاليات</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="event-details-page">
+
+<header>
+    <nav>
+        <div class="logo-title">
+            <img src="assets/img/1.png" alt="شعار الموقع">
+            <h3 class="site" data-ar="فعاليات حمص العدية" data-en="Homs Events">فعاليات حمص العدية</h3>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+            <a href="events.html" data-ar="الفعاليات" data-en="Events">الفعاليات</a>
+            <a href="event.html" data-ar="التصنيفات" data-en="Categories">التصنيفات</a>
+            <a href="about.html" data-ar="من نحن" data-en="About Us">من نحن</a>
+            <a href="coment.html" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</a>
+        </div>
+        <div class="language-switch">
+            <img src="assets/img/A (2).png" alt="العربية" id="lang-ar" title="العربية" class="flag-icon">
+            <img src="assets/img/E.png" alt="English" id="lang-en" title="English" class="flag-icon">
+        </div>
+    </nav>
+</header>
+
+<section class="container py-5">
+    <h2 class="text-center mb-4" data-ar="تفاصيل الفعاليات" data-en="Event Details">تفاصيل الفعاليات</h2>
+    <div class="row g-4">
+
+        <!-- فعالية 1 -->
+        <div class="col-lg-6" id="1">
+            <div class="card">
+                <img src="assets/img/5.png" class="card-img-top" alt="فعالية 1">
+                <div class="card-body">
+                    <h3 class="card-title" data-ar="أربعاء حمص" data-en="Chickpea Wednesday">أربعاء حمص <span class="badge bg-primary" data-ar="تنموية" data-en="Development">تنموية</span></h3>
+                    <p class="card-text" data-ar="نلتقي بعد يومين في مؤتمر أربعاء حمص ستكون هنالك بين الناس تشاركهم إعادة إعمار المدينة و نصنعه بحب من قلب العدية ....و لأجلها " data-en="We will meet in two days at the Homs Wednesday conference, where people will join in the city's reconstruction, and we will shape it with love from the heart of Al-Udhiya... and for its sake">نلتقي بعد يومين في مؤتمر أربعاء حمص ستكون هنالك بين الناس تشاركهم إعادة إعمار المدينة و نصنعه بحب من قلب العدية ....و لأجلها </p>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item" data-ar="التاريخ: 15/08/2025" data-en="Date: 15/08/2025">التاريخ: 15/08/2025</li>
+                        <li class="list-group-item" data-ar="المكان: المركز الثقافي" data-en="Location: Cultural Center">المكان: المركز الثقافي</li>
+                        <li class="list-group-item" data-ar="الوقت: 7:00 مساءً" data-en="Time: 7:00 PM">الوقت: 7:00 مساءً</li>
+                    </ul>
+                    <button class="btn btn-success w-100 open-modal-btn"
+                        data-bs-toggle="modal" data-bs-target="#dynamicModal"
+                        data-title="أربعاء حمص"
+                        data-category="تنموية"
+                        data-date="15/08/2025"
+                        data-location="المركز الثقافي"
+                        data-time="7:00 مساءً"
+                        data-image="assets/img/5.png"
+                        data-ar="سجل للفعالية" data-en="Register"
+                    >سجل للفعالية</button>
+                    <button class="btn btn-info w-100 mt-2 show-location-btn" data-ar="عرض موقع الفعالية" data-en="Show Location">عرض موقع الفعالية</button>
+                    <div class="location-image mt-2" style="display:none;">
+                        <img src="assets/img/مركز الثقافي.png" alt="صورة الموقع" class="img-fluid">
+                    </div>
+                    <div class="alert alert-info mt-2" data-ar="تسجيلك سيضمن لك مقعدًا في الفعالية." data-en="Your registration will reserve a seat for the event.">تسجيلك سيضمن لك مقعدًا في الفعالية.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- فعالية 2 -->
+        <div class="col-lg-6" id="2">
+            <div class="card">
+                <img src="assets/img/8.jpg" class="card-img-top" alt="فعالية 2">
+                <div class="card-body">
+                    <h3 class="card-title" data-ar="التراث الحمصي" data-en="Homs Heritage">التراث الحمصي <span class="badge bg-danger" data-ar="موسيقى" data-en="Music">موسيقى</span></h3>
+                    <p class="card-text" data-ar=" ___فن شعبي قديم يعتمد على العرض بالسيف و الترس و الأهازيج تشتهر بها المدينة خاصة في المناسبات و الأفراح __ حمص العدية فيكي سباع خالد سيف الله و بسيفه حاميك حمص يا دار السلام فيكي مربى الأسودي" data-en="___An ancient folk art based on sword and shield displays and chants, famous in the city, especially during celebrations and festivities __ Homs, the old city of bravery, in you are fierce lions, Khalid, the Sword of God, and with his sword he protects you, Homs, O land of peace, in you are nurtured lions"> ___فن شعبي قديم يعتمد على العرض بالسيف و الترس و الأهازيج تشتهر بها المدينة خاصة في المناسبات و الأفراح __ حمص العدية فيكي سباع خالد سيف الله و بسيفه حاميك حمص يا دار السلام فيكي مربى الأسودي </p>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item" data-ar="التاريخ: 16/08/2025" data-en="Date: 16/08/2025">التاريخ: 16/08/2025</li>
+                        <li class="list-group-item" data-en="Location: New Clock Square" data-ar="المكان: ساحة الساعة الجديدة">المكان: ساحة الساعة الجديدة</li>
+                        <li class="list-group-item" data-ar="الوقت: 6:00 مساءً" data-en="Time: 6:00 PM">الوقت: 6:00 مساءً</li>
+                    </ul>
+                    <button class="btn btn-success w-100 open-modal-btn"
+                        data-bs-toggle="modal" data-bs-target="#dynamicModal"
+                        data-title="التراث الحمصي"
+                        data-category="موسيقى"
+                        data-date="16/08/2025"
+                        data-location="ساحة الساعة الجديدة"
+                        data-time="6:00 مساءً"
+                        data-image="assets/img/8.jpg"
+                        data-ar="سجل للفعالية" data-en="Register"
+                    >سجل للفعالية</button>
+                    <button class="btn btn-info w-100 mt-2 show-location-btn"  data-ar="عرض موقع الفعالية" data-en="Show Location">عرض موقع الفعالية</button>
+                    <div class="location-image mt-2" style="display:none;">
+                        <img src="assets/img/الساعة.png" alt="صورة الموقع" class="img-fluid">
+                    </div>
+                    <div class="alert alert-info mt-2" data-ar="تسجيلك سيضمن لك مقعدًا في الفعالية." data-en="Your registration will reserve a seat for the event.">تسجيلك سيضمن لك مقعدًا في الفعالية.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- فعالية 3 -->
+        <div class="col-lg-6" id="3">
+            <div class="card">
+                <img src="assets/img/7.png" class="card-img-top" alt="فعالية 3">
+                <div class="card-body">
+                    <h3 class="card-title" data-ar="وجهتك الأكاديمية " data-en="Your academic destination">وجهتك الأكاديمية <span class="badge bg-warning text-dark" data-ar="تعليمية" data-en="Education">تعليمية</span></h3>
+                    <p class="card-text" data-en="An annual academic event and forum held at the University of Homs to introduce students to higher education programs. This forum aims to guide students toward their future academic paths and provides information about the available majors." data-ar="فعالية و ملتقى أكاديمي سنوي يقام في جامعة حمص لتعريف الطاب برامج التعليم العالي يهدف هذا الملتقى إلى توجيه الطلاب نحو مساراتهم الدراسية المستقبلية و تقدم المعلومات عن التخصصات المتاحة">فعالية و ملتقى أكاديمي سنوي يقام في جامعة حمص لتعريف الطاب برامج التعليم العالي يهدف هذا الملتقى إلى توجيه الطلاب نحو مساراتهم الدراسية المستقبلية و تقدم المعلومات عن التخصصات المتاحة </p>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item" data-en="Date: 17/08/2025" data-ar="التاريخ: 17/08/2025">التاريخ: 17/08/2025</li>
+                        <li class="list-group-item" data-ar="المكان: جامعة حمص" data-en="Location: University of Homs">المكان: جامعة حمص</li>
+                        <li class="list-group-item" data-ar="الوقت: 8:00 صباحاً" data-en="Time: 8:00 AM">الوقت: 8:00 صباحاً</li>
+                    </ul>
+                    <button class="btn btn-success w-100 open-modal-btn"
+                        data-bs-toggle="modal" data-bs-target="#dynamicModal"
+                        data-title="وجهتك الأكاديمية"
+                        data-category="تعليمية"
+                        data-date="17/08/2025"
+                        data-location="جامعة حمص"
+                        data-time="8:00 صباحاً"
+                        data-image="assets/img/7.png"
+                        data-ar="سجل للفعالية" data-en="Register"
+                    >سجل للفعالية</button>
+                    <button class="btn btn-info w-100 mt-2 show-location-btn" data-ar="عرض موقع الفعالية" data-en="Show Location">عرض موقع الفعالية</button>
+                    <div class="location-image mt-2" style="display:none;">
+                        <img src="assets/img/جامعة حمص.png" alt="صورة الموقع" class="img-fluid">
+                    </div>
+                    <div class="alert alert-info mt-2" data-ar="تسجيلك سيضمن لك مقعدًا في الفعالية." data-en="Your registration will reserve a seat for the event.">تسجيلك سيضمن لك مقعدًا في الفعالية.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- فعالية 4 -->
+        <div class="col-lg-6" id="4">
+            <div class="card">
+                <img src="assets/img/8.png" class="card-img-top" alt="فعالية 4">
+                <div class="card-body">
+                    <h3 class="card-title" data-ar="حفل افتتاح" data-en="Opening ceremony">حفل افتتاح <span class="badge bg-success" data-ar="ترفيهية" data-en="Entertainment">ترفيهية</span></h3>
+                    <p class="card-text" data-ar="وجهة رائعة للأسترخاء و الترفيه يقدم مجموعة متنوعة من الأنشطو مكان مثالي لقضاء وقت ممتع مع العائلة و الأصدقاء وسط الطبيعة" data-en="A wonderful destination for relaxation and entertainment, offering a variety of activities. A perfect place to spend enjoyable time with family and friends amidst nature.">وجهة رائعة للأسترخاء و الترفيه يقدم مجموعة متنوعة من الأنشطو مكان مثالي لقضاء وقت ممتع مع العائلة و الأصدقاء وسط الطبيعة</p>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item" data-ar="التاريخ: 18/08/2025" data-en="Date: 18/08/2025">التاريخ: 18/08/2025</li>
+                        <li class="list-group-item" data-ar="المكان: منتزه أميسا غاردن" data-en="Location: Amisa Garden Park">المكان: منتزه أميسا غاردن</li>
+                        <li class="list-group-item" data-ar="الوقت: 5:00 مساءً" data-en="Time: 5:00 PM">الوقت: 5:00 مساءً</li>
+                    </ul>
+                    <button class="btn btn-success w-100 open-modal-btn"
+                        data-bs-toggle="modal" data-bs-target="#dynamicModal"
+                        data-title="حفل افتتاح"
+                        data-category="ترفيهية"
+                        data-date="18/08/2025"
+                        data-location="منتزه أميسا غاردن"
+                        data-time="5:00 مساءً"
+                        data-image="assets/img/8.png"
+                        data-ar="سجل للفعالية" data-en="Register"
+                    >سجل للفعالية</button>
+                    <button class="btn btn-info w-100 mt-2 show-location-btn"  data-ar="عرض موقع الفعالية" data-en="Show Location">عرض موقع الفعالية</button>
+                    <div class="location-image mt-2" style="display:none;">
+                        <img src="assets/img/اميسا.png" alt="صورة الموقع" class="img-fluid">
+                    </div>
+                    <div class="alert alert-info mt-2" data-ar="تسجيلك سيضمن لك مقعدًا في الفعالية." data-en="Your registration will reserve a seat for the event.">تسجيلك سيضمن لك مقعدًا في الفعالية.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- فعالية 5 -->
+        <div class="col-lg-6" id="5">
+            <div class="card">
+                <img src="assets/img/كرامة.jpg" class="card-img-top" alt="فعالية 5">
+                <div class="card-body">
+                    <h3 class="card-title" data-ar="مباراه ودية" data-en="Friendly match">مباراه ودية <span class="badge bg-info text-dark" data-ar="رياضية" data-en="Sports">رياضية</span></h3>
+                    <p class="card-text" data-ar="المباره لرفع مستوى و كشف الأخطاء و الأستعداد لأستحقاقات المهمة و يحمل لقاءهما و يحمل لقاءهما تاريخاً خاصاً و طابعاً مميزاً يميزها عن باقي المباريات" data-en="The match is for raising the level, identifying mistakes, and preparing for important tasks. Their encounter carries a special history and a distinctive character that sets it apart from other matches.">المباره لرفع مستوى و كشف الأخطاء و الأستعداد لأستحقاقات المهمة و يحمل لقاءهما و يحمل لقاءهما تاريخاً خاصاً و طابعاً مميزاً يميزها عن باقي المباريات </p>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item" data-ar="التاريخ: 19/08/2025" data-en="Date: 19/08/2025">التاريخ: 19/08/2025</li>
+                        <li class="list-group-item" data-ar="المكان: ملعب الكرامة" data-en="Location: Al-Karama Stadium">المكان: ملعب الكرامة</li>
+                        <li class="list-group-item" data-ar="الوقت: 10:00 صباحاً" data-en="Time: 10:00 AM">الوقت: 10:00 صباحاً</li>
+                    </ul>
+                    <button class="btn btn-success w-100 open-modal-btn"
+                        data-bs-toggle="modal" data-bs-target="#dynamicModal"
+                        data-title="مباراة ودية"
+                        data-category="رياضية"
+                        data-date="19/08/2025"
+                        data-location="ملعب الكرامة"
+                        data-time="10:00 صباحاً"
+                        data-image="assets/img/كرامة.jpg"
+                        data-ar="سجل للفعالية" data-en="Register"
+                    >سجل للفعالية</button>
+                    <button class="btn btn-info w-100 mt-2 show-location-btn"  data-ar="عرض موقع الفعالية" data-en="Show Location">عرض موقع الفعالية</button>
+                    <div class="location-image mt-2" style="display:none;">
+                        <img src="assets/img/الملعب.png" alt="صورة الموقع" class="img-fluid">
+                    </div>
+                    <div class="alert alert-info mt-2" data-ar="تسجيلك سيضمن لك مقعدًا في الفعالية." data-en="Your registration will reserve a seat for the event.">تسجيلك سيضمن لك مقعدًا في الفعالية.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- فعالية 6 -->
+        <div class="col-lg-6" id="6">
+            <div class="card">
+                <img src="assets/img/Blue.jpg" class="card-img-top" alt="فعالية 6">
+                <div class="card-body">
+                    <h3 class="card-title" data-ar="مطعم بلوبيري" data-en="Bluebery Cafe">مطعم بلوبيري <span class="badge bg-secondary" data-ar="ترفيهية" data-en="Entertainment">ترفيهية</span></h3>
+                    <p class="card-text" data-ar="حلوياتهم تتدخل على القلب قبل المعده ننصح بالتجربة طعم غني بلذة كبيرة متاح قائمة لترضي كل الأذواق" data-en="Their sweets reach the heart before the stomach. We recommend trying them—rich in flavor and delight. There is a menu available to satisfy all tastes.">حلوياتهم تتدخل على القلب قبل المعده ننصح بالتجربة طعم غني بلذة كبيرة متاح قائمة لترضي كل الأذواق</p>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item" data-ar="التاريخ: 20/08/2025" data-en="Date: 20/08/2025">التاريخ: 20/08/2025</li>
+                        <li class="list-group-item"  data-ar="المكان: شارع السفير" data-en="Location: Ambassador Street">المكان: شارع السفير  </li>
+                        <li class="list-group-item" data-ar="الوقت: 9:00 صباحاً" data-en="Time: 9:00 AM">الوقت: 9:00 صباحاً</li>
+                    </ul>
+                    <button class="btn btn-success w-100 open-modal-btn"
+                        data-bs-toggle="modal" data-bs-target="#dynamicModal"
+                        data-title="مطعم بلوبيري"
+                        data-category="ترفيهية"
+                        data-date="20/08/2025"
+                        data-location ="شارع السفير"
+                        data-time="9:00 صباحاً"
+                        data-image="assets/img/Blue.jpg"
+                        data-ar="سجل للفعالية" data-en="Register"
+                    >سجل للفعالية</button>
+                    <button class="btn btn-info w-100 mt-2 show-location-btn"  data-ar="عرض موقع الفعالية" data-en="Show Location">عرض موقع الفعالية</button>
+                    <div class="location-image mt-2" style="display:none;">
+                        <img src="assets/img/بلوبيري.png" alt="صورة الموقع" class="img-fluid">
+                    </div>
+                    <div class="alert alert-info mt-2" data-ar="تسجيلك سيضمن لك مقعدًا في الفعالية." data-en="Your registration will reserve a seat for the event.">تسجيلك سيضمن لك مقعدًا في الفعالية.</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- مودال التسجيل -->
+<div class="modal fade" id="dynamicModal" tabindex="-1" aria-labelledby="dynamicModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitle">اسم الفعالية</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+      </div>
+      <div class="modal-body">
+        <img id="modalImage" src="" alt="صورة الفعالية" class="img-fluid mb-3">
+        <p>الفئة: <span id="modalCategory"></span></p>
+        <p>التاريخ: <span id="modalDate"></span></p>
+        <p>المكان: <span id="modalLocation"></span></p>
+        <p>الوقت: <span id="modalTime"></span></p>
+        <form id="modalForm">
+          <div class="mb-3">
+            <label for="modalName" class="form-label">الاسم</label>
+            <input type="text" class="form-control" id="modalName" required>
+          </div>
+          <div class="mb-3">
+            <label for="modalEmail" class="form-label">البريد الإلكتروني</label>
+            <input type="email" class="form-control" id="modalEmail" required>
+          </div>
+          <button type="submit" class="btn btn-success w-100">تسجيل</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3 data-ar="من نحن" data-en="About Us">من نحن</h3>
+            <p data-ar="منصة متخصصة في عرض الفعاليات و الأنشطة في مدينة حمص نسعى لتوفير تجربة مميزة للمستخدمين معنا." 
+               data-en="A platform specialized in showcasing events and activities in Homs, aiming to provide a great user experience.">
+               منصة متخصصة في عرض الفعاليات و الأنشطة في مدينة حمص نسعى لتوفير تجربة مميزة للمستخدمين معنا.
+            </p>
+        </div>
+        <div class="footer-section">
+            <h3 data-ar="معلومات التواصل" data-en="Contact Info">معلومات التواصل</h3>
+            <ul class="contact-info">
+                <li><i class="fas fa-map-marker-alt"></i> سوريا , مدينة حمص</li>
+                <li><i class="fas fa-phone"></i> +963 982 711 822</li>
+                <li><i class="fas fa-envelope"></i> info@eventsyria.com</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3 data-ar="تابعنا" data-en="Follow Us">تابعنا</h3>
+            <div class="social-links">
+                <a href="https://svuonline.org"><img src="assets/img/img1.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2025 دليل الفعاليات. جميع الحقوق محفوظة.
+    </div>
+</footer>
+<button id="darkModeToggle" class="dark-mode-btn" title="تبديل الوضع الداكن">🌙</button>
+<!-- Scroll to Top Button -->
+<button id="scrollTopBtn" title="الرجوع للأعلى">⬆</button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/main.js"></script>
+
+</body>
+</html>
